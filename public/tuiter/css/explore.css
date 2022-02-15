@@ -1,0 +1,115 @@
+
+.wd-body {
+    background: black;
+}
+
+.wd-layout {
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+/* Part A. */
+.wd-search-container {
+    position: relative;
+    margin-left: 12px;
+    display: block;
+}
+
+.wd-search-container-input {
+    background: darkgray;
+    color: white;
+    text-indent: 25px;
+    border-radius: 50px;
+    width: 93%;
+    height: 40px;
+}
+
+.wd-sear-container-gear {
+    position: relative;
+    padding-left: 12px;
+    color: blue;
+    font-size: 35px;
+}
+
+/*Part B.*/
+.wd-set-containers {
+    padding: 16px;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+}
+
+.wd-set-box {
+    font-size:15px;
+    padding: 16px;
+}
+
+.wd-set-box-1 {
+    color: rgb(29,161,242);
+    border-bottom: 4px solid rgb(29,161,242);
+}
+
+.wd-set-box-other {
+    color: rgb(110,118,125);
+}
+
+/** Part C */
+.wd-topics-container {
+    position: relative;
+    margin-left: 12px;
+    display: block;
+}
+
+.wd-topics {
+    font-size: 13px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-bold {
+    color : white;
+    font-size: 20px;
+}
+
+
+.wd-float-left {
+    float:left;
+}
+
+.wd-float-right {
+    float: right;
+    padding-right: 16px;
+    padding-top: 10px;
+}
+
+.wd-bold-content {
+    margin-top: 1px;
+    color : white;
+    font-size: 20px;
+}
+
+.wd-img-format {
+    border-radius: 20px;
+    width: 100px;
+    height: 100px
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+.wd-special-topics {
+    font-size: 13px;
+    color: white;
+}
+
+.wd-display {
+    display: inline-block;
+}
+
+
+
+
+
+
+

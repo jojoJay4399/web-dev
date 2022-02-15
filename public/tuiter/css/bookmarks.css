@@ -1,0 +1,150 @@
+
+.wd-body {
+    background: black;
+}
+
+.wd-layout {
+    border-width: 1px 1px 1px 1px;
+    border-style: solid;
+    border-color: rgb(47, 51, 54);
+}
+
+
+/** Part A. */
+.wd-container {
+    position: relative;
+    margin-left: 12px;
+    display: block;
+}
+
+.wd-bookmarks-title {
+    /*position: relative;*/
+    margin-left: 16px;
+    margin-top: 12px;
+    color: white;
+    font-size: 20px;
+}
+
+.wd-bookmarks-handle {
+    position: relative;
+    /*margin-top: 16px;*/
+    margin-left: 16px;
+    margin-bottom: 12px;
+    font-size: 13px;
+    color : lightgray;
+}
+
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-float-done {
+    clear : both;
+}
+
+
+.wd-img-profile {
+    position: relative;
+    margin-top: 16px;
+    margin-left: 16px;
+    height:48px;
+    width:48px;
+    border-radius: 48px;
+}
+
+.wd-profile-name {
+    position: relative;
+    left: 12px;
+    top: 12px;
+    font-size: 15px;
+    color: white;
+}
+.wd-profile-name-handle {
+    position: relative;
+    left: 10px;
+    top: 12px;
+    font-size: 15px;
+    color: gray;
+}
+
+.wd-display {
+    display: inline-block;
+}
+
+.wd-content {
+    position: relative;
+    font-size: 15px;
+    width: 506px;
+    left: 12px;
+    bottom: 12px;
+    color: white;
+}
+
+.wd-layout-around {
+    position: relative;
+    left: 12px;
+    border-width: 1px 1px 1px 1px;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    /*border-style: solid;*/
+    /*border-color: lightgray;*/
+    border-radius: 20px;
+    width: 504px;
+    /*border-bottom: 1px solid lightgray;*/
+}
+
+.wd-big-img {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.wd-text-content {
+    position: relative;
+    font-size: 15px;
+    padding : 12px;
+    width: 480px;
+    border-bottom: 1px solid lightgray;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.wd-bold-title {
+    position: relative;
+    color : white;
+}
+
+.wd-text {
+    position: relative;
+    color: lightgray;
+}
+
+
+.wd-icon-container {
+    position: relative;
+    left: 12px;
+    top: 12px;
+    display: flex;
+    /*justify-content: space-between;*/
+}
+
+.wd-icon-box {
+    position: relative;
+}
+
+.wd-comment {
+    color: red;
+    font-size: 20px;
+}
+
+.wd-number {
+    color: lightgray;
+}
+
