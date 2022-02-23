@@ -1,6 +1,6 @@
 
 .wd-body {
-    background: black;
+    background: white;
 }
 
 .wd-layout {
@@ -106,6 +106,64 @@
 .wd-display {
     display: inline-block;
 }
+
+
+
+
+/** Input icon into input. */
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+
+.input-field {
+    width: 91%;
+    padding: 5px;
+    margin-left: 0px;
+    text-align: justify;
+    border: 1px gray solid;
+    border-radius: 20px;
+    text-indent:30px;
+}
+
+/*.col-3{flex:0 0 auto;width:25%}.col-4{flex:0 0 auto;width:33.33333333%}*/
+.col-3.new-col {
+    flex:0 0 auto;
+    width:30%
+}
+
+.col-lg-1.new-wid {
+    flex:0 0 auto;
+    width:8.63333333%
+}
+
+.col-lg-7.new-width {
+    flex:0 0 auto;
+    width:58%
+}
+
+.list-group-item.override-item{
+    position:relative;
+    display:block;
+    padding:.5rem 1rem;
+    /*color:#212529;*/
+    color : #ffffff;
+    text-decoration:none;
+    background-color: black;
+    border:1px solid rgba(0,0,0,.125)
+}
+
+
 
 
 

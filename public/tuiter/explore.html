@@ -3,97 +3,356 @@
 <head>
     <link href = "css/explore.css" rel = "stylesheet"/>
     <script src="https://kit.fontawesome.com/10e40b494f.js" crossorigin="anonymous"></script>
+    <link href="../vendors/bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <link href="../vendors/fontawesome/css/all.css" rel="stylesheet"/>
     <meta charset="UTF-8">
-    <title>Explore</title>
+    <title>My explore</title>
 </head>
-<body class="wd-body">
+<body class="bg-black">
 
-    <div class = "wd-layout">
-        <div class ="wd-search-container">
-            <span class = "fa fa-search" style ="font-size:18px; color: gray; position: relative; left: 30px"> </span>
-            <input id = "search-input" type = "text" placeholder="Search Tuiter" class = "wd-search-container-input">
-            <span class="wd-sear-container-gear"><a href="explore-settings.html">&#9881;</a></span>
-        </div>
+<div class = "container mt-2 justify-content-center d-none d-sm-block">
+    <div class = "row">
+        <div class = "col-2 col-sm-2 col-md-2 col-lg-1 col-xl-2 col-xxl-2">
+            <ul class="list-group new-ls rounded-4" style="font-size: 1vw;">
+                <li class="list-group-item p-2 bg-black">
+                    <div class="container p-0">
+                        <i class="fa fa-twitter fa-1 fa-inverse"></i>
+                    </div>
+                </li>
+                <li class="list-group-item p-2 bg-black">
+                    <div class = "container p-0">
+                        <i class="fa fa-house-chimney fa-1x fa-inverse"></i>
+                        <div class="d-none d-xxl-inline d-xl-inline fa-1x fa-inverse">Home</div>
+                    </div>
+                </li>
+                <li class="list-group-item active p-2 bg-black" style="border: 2px lightgray solid;">
+                    <div class = "container p-0">
+                        <i class = "fa fa-hashtag fa-1x fa-inverse"></i>
+                        <div class="d-none d-xxl-inline d-xl-inline fa-1x">Explore</div>
+                    </div>
+                </li>
+                <li class="list-group-item override-item p-2 pe-0">
+                    <div class = "container p-0">
+                        <i class = "fa fa-bell fa-1x"></i>
+                        <div class="d-none d-xxl-inline d-xl-inline fa-1x">Notification</div>
+                    </div>
+                </li>
+                <li class="list-group-item override-item p-2 pe-0">
+                    <div class = "container p-0">
+                        <i class = "fa fa-envelope fa-1x"></i>
+                        <div class="d-none d-xxl-inline d-xl-inline fa-1x">Message</div>
+                    </div>
+                </li>
+                <li class="list-group-item override-item p-2 pe-0">
+                    <div class = "container p-0">
+                        <i class = "fa fa-bookmark fa-1x"></i>
+                        <div class="d-none d-xxl-inline d-xl-inline fa-1x">Bookmarks</div>
+                    </div>
+                </li>
+                <li class="list-group-item override-item p-2">
+                    <div class = "container p-0">
+                        <i class = "fa fa-list fa-1x"></i>
+                        <div class="d-none d-xxl-inline d-xl-inline fa-1x">Lists</div>
+                    </div>
+                </li>
+                <li class="list-group-item override-item p-2">
+                    <div class = "container p-0">
+                                <span class="fa-stack fa-1x" style="width: 1em; ">
+                                    <i class="fas fa-circle fa-stack-1x fa-inverse"></i>
+                                    <i class="fas fa-ellipsis-h fa-stack-1x" style="color: black"></i>
+                                </span>
+                        <div class="d-none d-xxl-inline d-xl-inline fa-1x">More</div>
+                    </div>
 
-        <div class = "wd-set-containers">
-            <div class="wd-set-box wd-set-box-1">For you</div>
-            <div class="wd-set-box wd-set-box-other">Trending</div>
-            <div class="wd-set-box wd-set-box-other">COVID-19</div>
-            <div class="wd-set-box wd-set-box-other">NEWS</div>
-            <div class="wd-set-box wd-set-box-other">Sports</div>
-            <div class="wd-set-box wd-set-box-other">Entertainment</div>
-        </div>
-
-        <div class = "wd-layout">
-            <div class = "wd-topics-container">
-                <p class = "wd-topics">Trending in Science</p>
-                <p class = "wd-bold">Starship</p>
-                <p class = "wd-topics">55.5K Tweets</p>
+                </li>
+            </ul>
+            <div class="d-grid mt-2">
+                <button class="btn btn-primary " type="button" style="border-radius: 30px;
+                        background: white; color: black; border-color: white;">
+                    <b>Tweet</b>
+                </button>
             </div>
         </div>
-
-        <div class = "wd-layout">
-            <div class = "wd-topics-container">
-                <p class="wd-topics">Sports &middot; Trending</p>
-                <p class = "wd-bold">Joe Rogan</p>
-                <p class = "wd-topics">5,218 Tweets</p>
+        <div class = "col-6 col-sm-10 col-md-10 col-lg-7 col-xl-6 col-xxl-6 p-3 pt-0">
+            <!--This is the search part-->
+            <div class = "row">
+                <div class = "container-fluid p-0" style="border: 1px #333333 solid; border-bottom:0;border-top: 0;">
+                    <div class = "input-icons ms-2 mt-1" style="display: inline; padding: 0; color: gray; border-color: #333333;">
+                        <i class="fa fa-search icon" style="color: gray"></i>
+                        <input class="input-field" type="text" placeholder="Search Twitter"
+                               style="background: #202020;color: white; border-color: #202020; outline: none;">
+                        <a href="explore-settings.html">
+                            <i class = "fa fa-gear icon fa-1x me-2" style="color: white;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!--This is Choosing Part-->
+            <div class = "row mt-0">
+                <div class = "container p-0" style="border: 1px #333333 solid; border-bottom:0; border-top: 0;">
+                    <ul class="nav justify-content-start">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="explore-topics/for-you.html"
+                               style="color: white; background: black; border-bottom: 4px solid dodgerblue">
+                                <b>For your</b>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="explore-topics/trending.html" style="color: lightgray; background: black">
+                                Trending
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="explore-topics/news.html" style="color: lightgray; background: black">
+                                News
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="explore-topics/sports.html" style="color: lightgray; background: black">
+                                Sports
+                            </a>
+                        </li>
+                        <li class="nav-item d-none .d-sm-block d-sm-none d-md-block">
+                            <a class="nav-link" href="explore-topics/entertainment.html" style="color: lightgray; background: black">
+                                Entertainment
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--This is Large Picture-->
+            <div class = "row position-relative">
+                <div class = "container-fluid p-0">
+                    <div class = "card text-white" style="background: black; border: 1px #333333 solid; border-top: 0;">
+                        <img src = "a4_images/JOO.png" class="img-responsive img-fluid p-0">
+                        <div class="card-img-overlay p-2">
+                            <div style="position: absolute; bottom: 8px; left: 10px; font-size: 3vw;">
+                                <b style= "color: hotpink;">JoJo : Stone Ocean</b>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--This is Content-->
+            <div class = "row position-relative mt-0">
+                <div class = "container" style="border: 1px #333333 solid; border-top: 0; ">
+                    <div class = "row">
+                        <div class = "col-9 mt-1">
+                            <text style="color: rgb(110, 118, 125);">Web Developlemt</text><br>
+                            <text style="display: inline; color: white;">
+                                <b>React JS</b>
+                                <i class="fa fa-circle-check position-absolute ms-1 mt-1"></i>
+                                <text style="color: rgb(110, 118, 125); position: absolute;"
+                                      class = "position-relative ms-4">- 2h</text>
+                            </text><br>
+                            <text style="display: inline; color: white;">
+                                <b>
+                                    React.js is a component based front end library that makes it very easy to
+                                    build Sinlge Page Applications or SPAs
+                                </b>
+                            </text>
+                        </div>
+                        <div class = "col-3 mt-1">
+                            <img src="a4_images/ReactJS.png" style="width: 100%; height: auto; " class = "rounded mb-4">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "row position-relative">
+                <div class = "container" style="border: 1px #333333 solid; border-top: 0;">
+                    <div class = "row">
+                        <div class = "col-9 mt-1">
+                            <!--                                <text style="color: rgb(110, 118, 125);">Web Developlemt</text><br>-->
+                            <text style="display: inline; color: white;">
+                                <b>JavaScript</b>
+                                <i class="fa fa-circle-check position-absolute ms-1 mt-1"></i>
+                                <text style="color: rgb(110, 118, 125); position: absolute;"
+                                      class = "position-relative ms-4">- 2h</text>
+                            </text><br>
+                            <text style="display: inline; color: white;">
+                                <b>
+                                    JavaScript is a programming language that can run on browsers as well as desktops
+                                </b>
+                            </text><br>
+                            <text style="color: rgb(110, 118, 125);">123K Tweets</text>
+                        </div>
+                        <div class = "col-3 mt-1 mb-3">
+                            <img src="a4_images/js.png" style="width: 100%; height: auto;" class = "rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "row position-relative">
+                <div class = "container" style="border: 1px #333333 solid;">
+                    <div class = "row">
+                        <div class = "col-9 mt-1">
+                            <text style="color: rgb(110, 118, 125);">Web Developlemt</text><br>
+                            <text style="display: inline; color: white;">
+                                <b>jQuery</b>
+                            </text><br>
+                            <text style="color: rgb(110, 118, 125);">112K Tweets</text><br>
+                        </div>
+                        <div class = "col-3 mt-1 mb-3">
+                            <img src="a4_images/jq.png" style="width: 100%; height: auto;" class = "rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "row position-relative">
+                <div class = "container" style="border: 1px #333333 solid; border-top: 0;">
+                    <div class = "row">
+                        <div class = "col-9 mt-1">
+                            <text style="color: rgb(110, 118, 125);">Web Developlemt</text><br>
+                            <text style="display: inline; color: white">
+                                <b>NodeJS</b>
+                                <i class="fa fa-circle-check position-absolute ms-1 mt-1"></i>
+                                <text style="color: rgb(110, 118, 125); position: absolute;"
+                                      class = "position-relative ms-4">- 2h</text>
+                            </text><br>
+                            <text style="color: rgb(110, 118, 125);">188K Tweets</text><br>
+                        </div>
+                        <div class = "col-3 mt-1 mb-3">
+                            <img src="a4_images/node.png" style="width: 100%; height: auto;" class = "rounded">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class = "wd-layout">
-            <div class="wd-topics-container">
-                <div class = "wd-float-left">
-                    <p class = "wd-special-topics wd-display">The New York Times</p>
-                    <p class = "wd-topics wd-display">&middot Yesterday</p>
-                    <p class = "wd-bold-content">CNN's Cuomo conundrum: A star anchor with a bother in trouble</p>
-                </div>
-                <div class = "wd-float-right">
-                    <img class = "wd-img-format" src = "a3_images/CNN.jpg">
-                </div>
-                <div class="wd-float-done"> </div>
+        <div class= "col-4 col-lg-4 col-xl-4 col-xxl-4 position-relative d-none d-lg-block d-xl-block d-xxl-block">
+            <div class="container p-0">
+                <ul class="list-group" style="border: 1px #333333 solid; border-radius: 20px; background: #333333">
+                    <li class="list-group-item" style="background: #202020; border-bottom: 0;">
+                        <span class = "d-none d-xxl-inline d-xl-inline d-lg-inline">
+                            <b style="color: lightgray;"> Who to follow </b>
+                        </span>
+                    </li>
+                    <li class="list-group-item" style="background: #202020; border-bottom: 0;">
+                        <div class="container p-0">
+                            <div class = "row">
+                                <div class="col-8">
+                                    <div class="float-start">
+                                        <img style="border-radius: 45px; width: 45px; height: 45px" src = "a4_images/1.jpg">
+                                    </div>
+                                    <div class="float-start position-absolute ms-5">
+                                        <text style="font-size: 15px;display: inline; position: absolute; color: lightgray;">
+                                            <b >Giorno Giovanna</b>
+                                            <i class="fa fa-circle-check mt-1 ms-1 position-absolute"></i>
+                                        </text><br>
+                                        <text style="font-size: 15px; color: gray;">@giorno_giovanna</text>
+                                    </div>
+                                    <div class="float-end"></div>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-primary mt-1 float-end"
+                                            style="border-radius: 30px;
+                                            background: white; color: black; border-color: white;">
+                                        <b>Follow</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item" style="background: #202020; border-bottom: 0;">
+                        <div class="container p-0">
+                            <div class = "row">
+                                <div class="col-8">
+                                    <div class="float-start">
+                                        <img style="border-radius: 45px; width: 45px; height: 45px" src = "a4_images/2.jpg">
+                                    </div>
+                                    <div class="float-start position-absolute ms-5">
+                                        <text style="font-size: 15px;display: inline; position: absolute; color: lightgray;">
+                                            <b>Rohan Kishibe</b>
+                                            <i class="fa fa-circle-check mt-1 ms-1 position-absolute"></i>
+                                        </text><br>
+                                        <text style="font-size: 15px; color: gray">@rohan_kishibe</text>
+                                    </div>
+                                    <div class="float-end"></div>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-primary mt-1 float-end" style="border-radius: 30px; background: white; color: black; border-color: white;">
+                                        <b>Follow</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item" style="background: #202020; border-bottom: 0;">
+                        <div class="container p-0">
+                            <div class = "row">
+                                <div class="col-8">
+                                    <div class="float-start">
+                                        <img style="border-radius: 45px; width: 45px; height: 45px" src = "a4_images/3.jpg">
+                                    </div>
+                                    <div class="float-start position-absolute ms-5">
+                                        <text style="font-size: 15px;display: inline; position: absolute; color: lightgray;">
+                                            <b>Bruno Bucciarati</b>
+                                            <i class="fa fa-circle-check mt-1 ms-1 position-absolute"></i>
+                                        </text><br>
+                                        <text style="font-size: 15px; color: gray;">@bruno_bucciarati</text>
+                                    </div>
+                                    <div class="float-end"></div>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-primary mt-1 float-end" style="border-radius: 30px; background: white; color: black; border-color: white;">
+                                        <b>Follow</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item" style="background: #202020;">
+                        <div class="container p-0">
+                            <div class = "row">
+                                <div class="col-8">
+                                    <div class="float-start">
+                                        <img style="border-radius: 45px; width: 45px; height: 45px" src = "a4_images/4.jpg">
+                                    </div>
+                                    <div class="float-start position-absolute ms-5">
+                                        <text style="font-size: 15px;display: inline; position: absolute; color: lightgray;">
+                                            <b>Dio Brando</b>
+                                            <i class="fa fa-circle-check mt-1 ms-1 position-absolute"></i>
+                                        </text><br>
+                                        <text style="font-size: 15px;color: gray;">@dio_brando</text>
+                                    </div>
+                                    <div class="float-end"></div>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-primary mt-1 float-end" style="border-radius: 30px; background: white; color: black; border-color: white;">
+                                        <b>Follow</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item" style="background: #202020;">
+                        <div class="container p-0">
+                            <div class = "row">
+                                <div class="col-8">
+                                    <div class="float-start">
+                                        <img style="border-radius: 45px; width: 45px; height: 45px" src = "a4_images/5.jpg">
+                                    </div>
+                                    <div class="float-start position-absolute ms-5">
+                                        <text style="font-size: 15px;display: inline; position: absolute; color: lightgray">
+                                            <b>Jotaro Kujo</b>
+                                            <i class="fa fa-circle-check mt-1 ms-1 position-absolute"></i>
+                                        </text><br>
+                                        <text style="font-size: 15px;color: gray">@jotaro_kujo</text>
+                                    </div>
+                                    <div class="float-end"></div>
+                                </div>
+                                <div class="col-4">
+                                    <button class="btn btn-primary mt-1 float-end" style="border-radius: 30px; background: white; color: black; border-color: white;">
+                                        <b>Follow</b>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-
-        <div class = "wd-layout">
-            <div class="wd-topics-container">
-                <div class = "wd-float-left">
-                    <p class = "wd-topics wd-display">COVID-19 &middot LIVE</p>
-                    <p class = "wd-bold-content">COVID-19: News and updates for Massachusetts</p>
-                </div>
-                <div class = "wd-float-right">
-                    <img class = "wd-img-format" src = "a3_images/covid.jpg">
-                </div>
-                <div class="wd-float-done"> </div>
-            </div>
-        </div>
-
-        <div class = "wd-layout">
-            <div class="wd-topics-container">
-                <div class = "wd-float-left">
-                    <p class = "wd-special-topics wd-display">Bloomberg Opinion</p>
-                    <p class = "wd-topics wd-display">&middot Yesterday</p>
-                    <p class = "wd-bold-content">Thinking about getting a booster? Read this first.</p>
-                </div>
-                <div class = "wd-float-right">
-                    <img class = "wd-img-format" src = "a3_images/booster.jpg">
-                </div>
-                <div class="wd-float-done"> </div>
-            </div>
-        </div>
-
-        <div class = "wd-layout">
-            <div class = "wd-topics-container">
-                <p class = "wd-topics">Trending in United States</p>
-                <p class = "wd-bold">Wonder Bread</p>
-                <p class = "wd-topics">1,259 Tweets</p>
-            </div>
-        </div>
-
-
     </div>
-
-
-
+</div>
 
 </body>
 </html>
