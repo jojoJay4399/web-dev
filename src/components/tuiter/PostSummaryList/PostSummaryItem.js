@@ -29,7 +29,7 @@ const PostSummaryItem = (
                         </span>
                     </div>
                     <div className = "col-4 col-md-3 mt-2 float-end">
-                        <img src={post.image} className = "rounded mb-4 wd-post-img"/>
+                        <img src={post.image} className = "rounded mb-4 wd-post-img" alt = "..."/>
                     </div>
                     <div className="float-done"/></div>
                 </div>

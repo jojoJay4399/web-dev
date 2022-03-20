@@ -15,7 +15,7 @@ const WhoToFollowListItem = (
             <div className = "row">
                 <div className = "col-8">
                     <div className = "float-start">
-                        <img src={who.avatarIcon}  className="rounded-circle wg-image"/>
+                        <img src={who.avatarIcon}  className="rounded-circle wg-image" alt="..."/>
                     </div>
                     <div className = "float-start ms-5 position-absolute">
                         <span className="wg-userName">

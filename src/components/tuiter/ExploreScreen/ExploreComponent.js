@@ -46,7 +46,7 @@ const ExploreComponent = () => {
             </ul>
 
             <div className = "card text-white">
-                <img src ={PIC} className="img-responsive p-0"/>
+                <img src ={PIC} className="img-responsive p-0" alt="..."/>
                 <div className="card-img-overlay p-2">
                     <div className="wd-img-text">
                         <b style = {{color: "hotpink"}}>JoJo : Stone Ocean</b>

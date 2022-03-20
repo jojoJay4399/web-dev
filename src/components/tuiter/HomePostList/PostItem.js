@@ -23,7 +23,7 @@ const PostItem = (
         <>
             <div className="row wd-bottom-line mt-2">
                 <div className="col-1 me-1">
-                    <img src={tweet.avatarIcon} className="wd-tweet-img"/>
+                    <img src={tweet.avatarIcon} className="wd-tweet-img" alt="..."/>
                 </div>
 
                 <div className="col-10">

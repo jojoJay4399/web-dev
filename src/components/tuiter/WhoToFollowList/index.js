@@ -1,9 +1,6 @@
 import WhoToFollowListItem from "./WhoToFollowListItem.js";
 import who from "./who.json";
 import React from "react";
-import todos from "../../labs/todo/todos.json";
-import TodoItem from "../../labs/todo/todo-item";
-
 
 const WhoToFollowList = () => {
     return (
