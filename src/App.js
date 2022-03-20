@@ -1,8 +1,11 @@
 import React from 'react'
 import './App.css';
-// import './vendors/bootstrap/css/bootstrap.min.css';
-import './vendors/bootstrap/bootstrap.min.css';
-import './vendors/fontawesome/css/all.min.css';
+// import '../public/vendors/bootstrap/css/bootstrap.min.css'
+// import '../public/vendors/bootstrap/bootstrap.min.css'
+// import '../public/vendors/fontawesome/css/all.min.css'
+// import '../public/vendors/bootstrap/css/bootstrap.min.css';
+// import './vendors/bootstrap/bootstrap.min.css';
+// import './vendors/fontawesome/css/all.min.css';
 import HelloWorld from "./components/hello-world";
 import Labs from "./components/labs";
 import Tuiter from "./components/tuiter";
