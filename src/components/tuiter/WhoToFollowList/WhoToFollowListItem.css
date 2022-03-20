@@ -1,0 +1,24 @@
+
+
+.wg-image {
+    border-radius: 40px;
+    width: 45px;
+    height: 45px
+}
+
+.wg-userName {
+    font-size: 15px;
+    display: inline;
+    position: absolute;
+    color: lightgray;
+}
+
+.wg-handle {
+    font-size: 15px;
+    color: gray;
+}
+
+.wg-button {
+    border-radius: 30px;
+    outline: none;
+}

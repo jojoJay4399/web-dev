@@ -1,0 +1,24 @@
+
+
+.wd-post-topic {
+    color: gray;
+}
+
+.wd-post-username {
+    display: inline;
+    color: white;
+}
+
+.wd-post-time {
+    color: rgb(110, 118, 125);
+    position: absolute;
+}
+
+.wd-post-title {
+    display: inline;
+    color: white;
+}
+
+.wd-post-img {
+    width: 100%; height: auto;
+}

@@ -1,0 +1,38 @@
+
+.wd-input {
+    background: #202020;
+    color: white;
+    border-color: #202020;
+    outline: none;
+}
+
+
+.input-icons i {
+    position: absolute;
+}
+
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.icon {
+    padding: 10px;
+    min-width: 40px;
+}
+
+
+.input-field {
+    width: 95%;
+    padding: 5px;
+    margin-left: 0px;
+    text-align: justify;
+    border: 1px gray solid;
+    border-radius: 20px;
+    text-indent:30px;
+}
+
+
+.wd-img-text {
+    position: absolute; bottom: 8px; left: 10px; font-size: 3vw;
+}

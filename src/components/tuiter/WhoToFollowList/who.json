@@ -1,0 +1,8 @@
+
+[
+  {"avatarIcon" : "../../../images/1.jpg", "userName": "Giorno Giovanna", "handle": "giorno_giovanna", "id" :  1},
+  {"avatarIcon" : "../../images/2.jpg", "userName": "Rohan Kishibe", "handle": "rohan_kishibe", "id" :  2},
+  {"avatarIcon" : "../../images/3.jpg", "userName": "Bruno Bucciarati", "handle": "bruno_bucciarati", "id" :  3},
+  {"avatarIcon" : "../../images/4.jpg", "userName": "Dio Brando", "handle": "dio_brando", "id" : 4},
+  {"avatarIcon" : "../../images/5.jpg", "userName": "Jotaro Kujo", "handle": "jotaro_kujo", "id" :  5}
+]
