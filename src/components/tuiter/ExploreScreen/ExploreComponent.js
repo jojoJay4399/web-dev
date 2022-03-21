@@ -1,6 +1,6 @@
 import React from "react";
 import PostSummaryList from "../PostSummaryList"
-import PIC from "../images/JOO.png"
+// import PIC from "../../../../public/images/JOO.png"
 import "./ExploreComponent.css"
 
 const ExploreComponent = () => {
@@ -46,7 +46,7 @@ const ExploreComponent = () => {
             </ul>
 
             <div className = "card text-white">
-                <img src ={PIC} className="img-responsive p-0" alt="..."/>
+                <img src ={"../../../images/JOO.png"} className="img-responsive p-0" alt="..."/>
                 <div className="card-img-overlay p-2">
                     <div className="wd-img-text">
                         <b style = {{color: "hotpink"}}>JoJo : Stone Ocean</b>
