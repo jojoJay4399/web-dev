@@ -1,5 +1,6 @@
 import React from "react";
 import './PostItem.css'
+import {Link} from "react-router-dom";
 
 const PostItem = (
     {
@@ -54,25 +55,25 @@ const PostItem = (
 
                     <div className="row position-relative mt-3">
                         <div className="col">
-                            <a href="#" className="far fa-comment wd-tweet-icon">
+                            <Link to="/tuiter/home/comment" className="far fa-comment wd-tweet-icon">
                                 {tweet.comment}
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col">
-                            <a href="#" className="fas fa-retweet wd-tweet-icon">
+                            <Link to="/tuiter/home/retweet" className="fas fa-retweet wd-tweet-icon">
                                 {tweet.retweet}
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col">
-                            <a href="#" className="fas fa-heart wd-tweet-icon" style={{"color": "red"}}>
+                            <Link to="/tuiter/home/heart" className="fas fa-heart wd-tweet-icon" style={{"color": "red"}}>
                                 {tweet.heart}
-                            </a>
+                            </Link>
                         </div>
 
                         <div className="col">
-                            <a href="#" className="fas fa-upload wd-tweet-icon"/>
+                            <Link to="/tuiter/home/heart" className="fas fa-upload wd-tweet-icon"/>
                         </div>
 
                     </div>

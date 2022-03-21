@@ -11,7 +11,7 @@ const Styles = () => {
     };
     const bgRed = {
         "backgroundColor": "lightcoral",
-        "color": "black",
+        colorBlack,
         ...padding10px
     };
     return (
