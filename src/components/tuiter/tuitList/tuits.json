@@ -1,5 +1,4 @@
 
-
 [
     {
         "avatarIcon": "../../../images/1.jpg",
@@ -11,10 +10,10 @@
         "cardContent": true,
         "cardTitle":"JoJo\"s Bizarre Adventure: Golden Wind...",
         "cardText": "The anime adaptation of Golden Wind was personally announced by series creator Hirohiko Araki at the \"Ripples of Adventure\" art exhibition on June 21, 2018.Golden Wind is chief directed by returning director Naokatsu Tsuda, who is accompanied by series directors Yasuhiro Kimura and Hideya Takahashi and the senior writer Yasuko Kobayashi.",
-        "comment": 10,
-        "retweet": 9,
-        "heart": 10,
-        "id": 1
+        "comment":  10,
+        "retweet":  9,
+        "heart":  10,
+        "id":  1
     },
 
     {

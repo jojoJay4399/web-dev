@@ -1,9 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import Classes from "./classes";
-import Styles from "./styles";
-import ConditionalOutput from "./conditional-output";
-import TodoList from "./todo/todo-list"
+import ReduxExamples from "./redux-examples";
 const Index = () => {
     return(
         <>
@@ -14,10 +11,9 @@ const Index = () => {
             <Link to = "/tuiter/home">
                 Tuiter
             </Link>
-            <TodoList/>
-            <ConditionalOutput/>
-            <Styles/>
-            <Classes/>
+
+            <ReduxExamples/>
+
         </>
 
     )

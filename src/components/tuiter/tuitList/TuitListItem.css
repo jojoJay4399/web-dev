@@ -1,8 +1,8 @@
 
-.wd-bottom-line {
-    border-bottom: 1px #333333 solid;
-    /*border: 1px #333333 solid;*/
-}
+/*.wd-bottom-line {*/
+/*    border-bottom: 1px #333333 solid;*/
+/*    !*border: 1px #333333 solid;*!*/
+/*}*/
 .wd-tweet-img {
     border-radius: 40px;
     width: 45px;
@@ -26,9 +26,9 @@
 
 .wd-tweet-icon {
     font-size: 18px;
-    text-decoration: None;
+    /*text-decoration: 10px;*/
     color: lightgray;
-    word-spacing: 12px;
+    /*word-spacing: 20px;*/
     padding-right: 20px;
     margin-top: 10px;
 }

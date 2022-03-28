@@ -1,0 +1,55 @@
+[
+  {
+    "id": "123",
+    "topic": "JOJO",
+    "postedBy": {
+      "username": "Giorno Giovanna"
+    },
+    "liked": false,
+    "verified": false,
+    "handle": "giorno_giovanna",
+    "time": "2h",
+    "title": "The anime adaptation of Golden Wind",
+
+    "withTuit": true,
+    "tuit": "The anime adaptation of Golden Wind was personally announced by series creator Hirohiko Araki at the \"Ripples of Adventure\" art exhibition on June 21, 2018.Golden Wind is chief directed by returning director Naokatsu Tsuda, who is accompanied by series directors Yasuhiro Kimura and Hideya Takahashi and the senior writer Yasuko Kobayashi.",
+    "attachments": {
+      "image": "../../../images/bookmarks2.jpg"
+    },
+
+    "avatar": "../../../images/1.jpg",
+
+    "stats": {
+      "comments": 123,
+      "retuits": 234,
+      "likes": 345
+    }
+  },
+
+  {
+      "id": "456",
+      "topic": "JOJO",
+      "postedBy": {
+        "username": "Rohan Kishibe"
+      },
+      "liked": false,
+      "verified": true,
+      "handle": "rohan_kishibe",
+      "time": "31h",
+      "title": "JoJo\"s Bizarre Adventure: Stardust Crusaders",
+
+      "withTuit": false,
+      "tuit": "",
+      "attachments": {
+        "image": "../../../images/bookmarks3.jpg"
+      },
+
+      "avatar": "../../../images/2.jpg",
+
+      "stats": {
+        "comments": 111,
+        "retuits": 222,
+        "likes": 333
+      }
+  }
+]
