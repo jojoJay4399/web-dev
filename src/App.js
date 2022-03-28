@@ -24,7 +24,7 @@ function App() {
               <Routes>
                   <Route path="/">
                       <Route path="labs" element={<Labs/>}/>
-                      <Route path="hello" element={<HelloWorld/>}/>
+                      <Route index element={<HelloWorld/>}/>
                       <Route path="tuiter" element={<Tuiter/>}>
                           <Route index
                                  element={<HomeScreen/>}/>

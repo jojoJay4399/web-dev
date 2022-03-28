@@ -5,7 +5,7 @@ const Index = () => {
     return(
         <>
             <h1>Labs</h1>
-            <Link to = "/hello">
+            <Link to = "/">
                 Hello
             </Link>|
             <Link to = "/tuiter/home">
