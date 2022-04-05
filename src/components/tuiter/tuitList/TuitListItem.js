@@ -2,12 +2,10 @@ import React from "react";
 import './TuitListItem.css'
 import TuitStats from "./tuit-stats";
 import { useDispatch } from "react-redux";
+import {deleteTuit} from "../../actions/tuits-action";
 
 const TuitListItem = ({tuit}) => {
     const dispatch = useDispatch();
-    const deleteTuit = (tuit) => {
-        dispatch({type: 'delete-tuit', tuit});
-    }
     return (
         <li className="list-group-item">
             <div className="row wd-bottom-line mt-2">
@@ -18,7 +16,7 @@ const TuitListItem = ({tuit}) => {
                 <div className="col-10">
                     <div className="row">
                         <span className="wd-tweet-userName float-start">
-                            <b>{tuit.postedBy.username}</b>
+                            <b>{tuit.username}</b>
                             <i className="fa fa-certificate position-absolute ms-1 mt-1"/>
                             <span className="position-absolute ms-4 wd-tweet-handle">
                                 @{tuit.handle} &middot; {tuit.time}
@@ -29,14 +27,14 @@ const TuitListItem = ({tuit}) => {
                         </span>
                     </div>
                     <div className = "card float-start ">
-                            <img src={tuit.attachments.image} className="card-img-top img-fluid" alt="..."/>
-                            {tuit.withTuit ?
-                                <div className = "card-body">
-                                    {/*<div className = "card-title" style={{"color": "white"}}>*/}
-                                    {/*    {tuit.cardTitle}*/}
-                                    {/*</div>*/}
-                                    <p className="card-text"> {tuit.tuit} </p>
-                                </div> : ''}
+                        <img src={tuit.image} className="card-img-top img-fluid" alt="..."/>
+                        {tuit.withTuit ?
+                            <div className = "card-body">
+                                {/*<div className = "card-title" style={{"color": "white"}}>*/}
+                                {/*    {tuit.cardTitle}*/}
+                                {/*</div>*/}
+                                <p className="card-text"> {tuit.tuit} </p>
+                            </div> : ''}
                     </div>
                     <div className="row mt-2">
                         <TuitStats tuit={tuit}/>
@@ -44,7 +42,8 @@ const TuitListItem = ({tuit}) => {
                 </div>
 
                 <div className="col-auto">
-                    <i onClick={() => deleteTuit(tuit)} className="fas fa-trash fa-pull-right"/>
+                    {/*<i onClick={() => deleteTuit(tuit)} className="fas fa-trash fa-pull-right"/>*/}
+                    <i className="fas fa-trash float-end" onClick={() => deleteTuit(dispatch, tuit)}/>
                 </div>
             </div>
         </li>
