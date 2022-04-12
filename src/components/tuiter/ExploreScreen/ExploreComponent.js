@@ -10,7 +10,8 @@ const ExploreComponent = () => {
                 <div className="col-11">
                     <i className = "fa fa-search fa-lg mt-2 pt-1 ms-2 ps-1" style={{"position": "absolute"}}/>
                     <div className="search">
-                        <input className="form-control wd-input input-field" placeholder="Search Twitter"/></div>
+                        <input className="form-control wd-input input-field" placeholder="Search Twitter"/>
+                    </div>
                 </div>
                 <div className="col-1 p-0">
                     <i className="fas fa-cog fa-2x"/>
