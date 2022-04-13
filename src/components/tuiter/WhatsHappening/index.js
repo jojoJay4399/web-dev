@@ -7,8 +7,7 @@ import {createTuit} from "../../actions/tuits-action"
 
 const WhatsHappening = () => {
     let [newTuit, setNewTuit] = useState(
-        {tuit: 'New tuit', dislikes: 0, likes: 0, username : 'JOJO', handle: 'jojo', time: '1 second ago',
-            withTuit: true, image: '../../../images/bookmarks1.jpg'});
+        {tuit: 'New tuit', likes : 0, dislikes : 0, liked: false, disliked: false});
     const dispatch = useDispatch();
 
     return (

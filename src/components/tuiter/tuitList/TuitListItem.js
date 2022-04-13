@@ -17,17 +17,17 @@ const TuitListItem = ({tuit}) => {
                     <div className="row">
                         <span className="wd-tweet-userName float-start">
                             <b>{tuit.username}</b>
-                            <i className="fa fa-certificate position-absolute ms-1 mt-1"/>
-                            <span className="position-absolute ms-4 wd-tweet-handle">
-                                @{tuit.handle} &middot; {tuit.time}
-                            </span>
+                            {/*<i className="fa fa-certificate position-absolute ms-1 mt-1"/>*/}
+                            {/*<span className="position-absolute ms-4 wd-tweet-handle">*/}
+                            {/*    @{tuit.handle} &middot; {tuit.time}*/}
+                            {/*</span>*/}
                         </span>
-                        <span className="wd-tweet-title">
-                            {tuit.title}
-                        </span>
+                        {/*<span className="wd-tweet-title">*/}
+                        {/*    {tuit.title}*/}
+                        {/*</span>*/}
                     </div>
                     <div className = "card float-start ">
-                        <img src={tuit.image} className="card-img-top img-fluid" alt="..."/>
+                        {/*<img src={tuit.image} className="card-img-top img-fluid" alt="..."/>*/}
                         {tuit.withTuit ?
                             <div className = "card-body">
                                 {/*<div className = "card-title" style={{"color": "white"}}>*/}
